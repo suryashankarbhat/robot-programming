@@ -1,6 +1,6 @@
 ROBTOTICS ASSESSMENT - COUNTING OF GRAPES AUTONOMOUSLY USING ROS PROGRAMMING
 
-  TASK1:
+  STEP 1:
 1.  use the below code to update all the softwares
 Update
     
@@ -24,7 +24,7 @@ Update
 
 3.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robotics/tree/main/assessment%20item%201/catkin_ws/src/uol_cmp9767m_tutorial
 
-TASK 2:
+STEP 2:
 
 1.In this task,we will run the below code to launch the vineyard map in rviz and gazebo environment
 The topological map for the demo is available in uol_cmp9767m_tutorial/maps/assessment.yaml. 
@@ -51,7 +51,7 @@ you will see some warnings in the terminal where you launched topo_nav.launch sa
  open the topological map visualisation config for RVIZ in uol_cmp9767m_tutorial/config/topo_nav.rviz.
     
 
-TASK 3: - 
+STEP 3: - 
 
 1.to create an action client that can send goals to the robot's topological navigation action.
   In another terminal run 
