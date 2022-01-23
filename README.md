@@ -22,7 +22,7 @@ Update
         
         
 
-3.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robotics/tree/main/assessment%20item%201/catkin_ws/src/uol_cmp9767m_tutorial
+3.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robot-programming/tree/main/uol_cmp9767m_tutorial
 
 STEP 2:
 
