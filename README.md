@@ -5,8 +5,7 @@
 
 TASK1:
 1.  use the below code to update all the softwares
-
-    Update: \ 
+Update: \ 
     
     
     sudo apt-get update && sudo apt-get upgrade
@@ -15,6 +14,7 @@ TASK1:
 2. Install below packages required fro the assessment:
  
 
+    
     sudo apt-get install \
         ros-melodic-topological-utils \
         ros-melodic-topological-navigation \
