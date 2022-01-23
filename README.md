@@ -6,7 +6,8 @@
 TASK1:
 1.  use the below code to update all the softwares
 
-    Update: \  sudo apt-get update && sudo apt-get upgrade
+    Update: \ 
+    sudo apt-get update && sudo apt-get upgrade
 
 2. Install below packages required fro the assessment:
 
@@ -27,6 +28,7 @@ TASK 2:
     Launch the simulation setup
 
         roslaunch bacchus_gazebo vineyard_demo.launch world_name:=vineyard_small
+        
 2. to launch the required files 
         roslaunch uol_cmp9767m_tutorial topo_nav.launch, 
 
@@ -44,9 +46,12 @@ TASK 3: -
 1.to create an action client that can send goals to the robot's topological navigation action.
   In another terminal run 
         rosrun uol_cmp9767m_tutorial set_topo_nav_goal.py 
-    it will autonomously move to the wave points
+   
+   it will autonomously move to the wave points
 
 2.to count the the number of fruits in the vineyard run the below code in another terminal 
+
+
            rosrun uol_cmp9767m_tutorial counting_grapes.py
 
       
