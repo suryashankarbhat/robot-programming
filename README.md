@@ -2,7 +2,7 @@ ROBTOTICS ASSESSMENT - COUNTING OF GRAPES AUTONOMOUSLY USING ROS PROGRAMMING
 
   TASK1:
 1.  use the below code to update all the softwares
-Update: 
+Update
     
     
     
@@ -10,7 +10,7 @@ Update:
     
 
 
-2. Install below packages required fro the assessment:
+2. Install below packages required fro the assessment
  
 
     
