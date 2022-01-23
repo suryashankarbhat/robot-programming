@@ -6,7 +6,7 @@ Update
     
     
     
-    sudo apt-get update && sudo apt-get upgrade
+        sudo apt-get update && sudo apt-get upgrade
     
 
 
@@ -14,11 +14,11 @@ Update
  
 
     
-    sudo apt-get install 
-        ros-melodic-topological-utils \
-        ros-melodic-topological-navigation \
-        ros-melodic-topological-navigation-msgs \
-        ros-melodic-strands-navigation
+        sudo apt-get install 
+            ros-melodic-topological-utils \
+            ros-melodic-topological-navigation \
+            ros-melodic-topological-navigation-msgs \
+            ros-melodic-strands-navigation
         
         
 
