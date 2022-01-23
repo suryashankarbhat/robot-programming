@@ -13,7 +13,7 @@ TASK1:
     
 
 2. Install below packages required fro the assessment:
-3. 
+ 
 
     sudo apt-get install \
         ros-melodic-topological-utils \
@@ -27,9 +27,8 @@ TASK1:
 TASK 2:
 
 1.In this task,we will run the below code to launch the vineyard map in rviz and gazebo environment
-
-    The topological map for the demo is available in uol_cmp9767m_tutorial/maps/assessment.yaml. 
-    Create a folder (named mongodb) in your user home directory. MongoDB will store all database files required to run our topological map. This step is required only once.
+The topological map for the demo is available in uol_cmp9767m_tutorial/maps/assessment.yaml. 
+ Create a folder (named mongodb) in your user home directory. MongoDB will store all database files required to run our topological map. This step is required only once.
     Launch the simulation setup
 
         roslaunch bacchus_gazebo vineyard_demo.launch world_name:=vineyard_small
