@@ -14,7 +14,7 @@ Update
  
 
     
-        sudo apt-get install 
+        sudo apt-get install \ 
             ros-melodic-topological-utils \
             ros-melodic-topological-navigation \
             ros-melodic-topological-navigation-msgs \
