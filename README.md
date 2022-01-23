@@ -1,5 +1,5 @@
 
-                                                            ROBTOTICS ASSESSMENT : COUNTING OF GRAPES AUTONOMOUSLY USING ROS PROGRAMMING
+                                 ROBTOTICS ASSESSMENT : COUNTING OF GRAPES AUTONOMOUSLY USING ROS PROGRAMMING
 
    
 
@@ -8,8 +8,10 @@ TASK1:
 Update: \ 
     
     
+    
     sudo apt-get update && sudo apt-get upgrade
     
+
 
 2. Install below packages required fro the assessment:
  
@@ -20,6 +22,7 @@ Update: \
         ros-melodic-topological-navigation \
         ros-melodic-topological-navigation-msgs \
         ros-melodic-strands-navigation
+        
         
 
 3.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robotics/tree/main/assessment%20item%201/catkin_ws/src/uol_cmp9767m_tutorial
