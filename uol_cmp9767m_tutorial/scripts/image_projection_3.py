@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+#obtained the code from workshop tutorial
 # Python libs
 import sys, time
 
@@ -69,7 +69,7 @@ class image_projection:
         kernelClose=np.ones((20,20))
 
         image_colorHSV=cv2.cvtColor(image_color,cv2.COLOR_BGR2HSV)
-        # detect a red blob in the color image
+        # detect a grape in the color image
         image_mask = cv2.inRange(image_colorHSV, (100,30,55), (255,255,255))
 
         image_maskClose=cv2.morphologyEx(image_mask,cv2.MORPH_CLOSE,kernelClose)
@@ -81,18 +81,12 @@ class image_projection:
 
         
 
-        # calculate moments of the binary image
-        # M = cv2.moments(image_mask)
-
-        
-        # cv2.drawContours(image_color,conts_rectangle,-1,(255,0,0),1)
         for i in range (len(conts)):
                 x,y,w,h=cv2.boundingRect(conts[i])
-                cv2.rectangle(image_color,(x,y),(x+w,y+h),(0,0,255), 2)# we draw a box around each contour 
+                cv2.rectangle(image_color,(x,y),(x+w,y+h),(0,0,255), 2)# to draw a box around each contour 
                 cv2.putText(image_color, str(i+1),(x,y+h),cv2.FONT_HERSHEY_SIMPLEX,0.7,(0,255,0))#count the number of contours there are
                     
-        # for c in conts:
-        #     try:
+       #obtained the code from
         for c in conts:
             try:  
                 M = cv2.moments(c)
@@ -146,19 +140,12 @@ class image_projection:
 
                 # filter(lambda v: v==v, self.glo_array)
                 epsilon = 0.05
-                min_space = 20
+                min_space = 18
                 DB = DBSCAN(eps = epsilon, min_samples=min_space).fit(self.glo_array)
                 No_clusters = len(np.unique(DB.labels_))
-                print('number of cluster', No_clusters)
+                print(' total number of grapes', No_clusters)
 
-                # if self.visualisation:
-                #     # draw circles
-                #     cv2.circle(image_color, (int(image_coords[1]), int(image_coords[0])), 10, 255, -1)
-                #     cv2.circle(image_depth, (int(depth_coords[1]), int(depth_coords[0])), 5, 255, -1)
-
-                #resize and adjust for visualisation
-                #image_color = cv2.resize(image_color, (0,0), fx=0.5, fy=0.5)
-                #image_depth *= 10.0/10.0 # scale for visualisation (max range 10.0 m)
+                
 
                 cv2.imshow("image depth", image_depth)
                 cv2.imshow("image color", image_color)
