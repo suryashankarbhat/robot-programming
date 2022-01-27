@@ -10,7 +10,7 @@ Update
     
 
 
-2. Install below packages required fro the assessment
+2. Install below packages required for the assessment
  
 
     
@@ -19,10 +19,16 @@ Update
             ros-melodic-topological-navigation \
             ros-melodic-topological-navigation-msgs \
             ros-melodic-strands-navigation
-        
+3.  if you dont have python libraries please run the below code to install it
+
+     sudo apt-get install python-dev python-pip python3-dev python3-pip
+
+	   sudo -H pip2 install -U pip numpy
+
+	   sudo -H pip3 install -U pip numpy
         
 
-3.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robot-programming/tree/main/uol_cmp9767m_tutorial
+3.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robot-programming/tree/main/uol_cmp9767m_tutorial or copy the fils from CMP9767M assessment
 
 STEP 2:
 
@@ -43,7 +49,7 @@ if you work with a dockerised distribution (e.g. at home or using a remote acces
 you will see some warnings in the terminal where you launched topo_nav.launch saying the pointset is not found in the message_store. This is because we haven't loaded the topological map to the mongodb yet. Once you do the next step, that warning should stop.
 
 
-        rosrun topological_utils load_yaml_map.py $(rospack find uol_cmp9767m_tutorial)/maps/assessment.yaml.
+        rosrun topological_utils load_yaml_map.py $(rospack find uol_cmp9767m_tutorial)/maps/assessment2.yaml.
  
  
  This step is required only once.
@@ -64,7 +70,7 @@ STEP 3: -
 2.to count the the number of fruits in the vineyard run the below code in another terminal 
 
 
-           rosrun uol_cmp9767m_tutorial counting_grapes.py
+           rosrun uol_cmp9767m_tutorial grape_detection.py
 
       
 
