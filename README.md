@@ -19,16 +19,16 @@ Update
             ros-melodic-topological-navigation \
             ros-melodic-topological-navigation-msgs \
             ros-melodic-strands-navigation
-3.  if you dont have python libraries please run the below code to install it
+3.  if you don't have python libraries please run the below code to install it and install opencv according to your system requirement
 
-     sudo apt-get install python-dev python-pip python3-dev python3-pip
+           
+           
+            pip install --user imutils
+            pip install -U scikit-learn
 
-	   sudo -H pip2 install -U pip numpy
 
-	   sudo -H pip3 install -U pip numpy
-        
 
-3.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robot-programming/tree/main/uol_cmp9767m_tutorial or copy the fils from CMP9767M assessment
+4.First, make sure that you created a workspace and clone the required files from github https://github.com/suryashankarbhat/robot-programming/tree/main/uol_cmp9767m_tutorial or copy the files uol_cmp9767m_tutorial from CMP9767M assessment
 
 STEP 2:
 
@@ -42,19 +42,19 @@ The topological map for the demo is available in uol_cmp9767m_tutorial/maps/asse
 2. to launch the required files 
 
 
-        roslaunch uol_cmp9767m_tutorial topo_nav.launch, 
+        roslaunch uol_cmp9767m_tutorial topo_nav.launch. 
 
 if you work with a dockerised distribution (e.g. at home or using a remote access) please use the following line instead which will help to address      some issues with the MongoDB database: HOSTNAME=0.0.0.0 roslaunch uol_cmp9767m_tutorial topo_nav.launch.
         
 you will see some warnings in the terminal where you launched topo_nav.launch saying the pointset is not found in the message_store. This is because we haven't loaded the topological map to the mongodb yet. Once you do the next step, that warning should stop.
 
 
-        rosrun topological_utils load_yaml_map.py $(rospack find uol_cmp9767m_tutorial)/maps/assessment2.yaml.
+        rosrun topological_utils load_yaml_map.py $(rospack find uol_cmp9767m_tutorial)/maps/assessment2.yaml
  
  
  This step is required only once.
        
- open the topological map visualisation config for RVIZ in uol_cmp9767m_tutorial/config/topo_nav.rviz.
+ open the topological map visualisation config for RVIZ in uol_cmp9767m_tutorial/config/topo_nav.rviz
     
 
 STEP 3: - 
@@ -63,14 +63,14 @@ STEP 3: -
   In another terminal run 
   
   
-        rosrun uol_cmp9767m_tutorial set_topo_nav_goal.py 
+    rosrun uol_cmp9767m_tutorial set_topo_nav_goal.py 
    
    it will autonomously move to the wave points
 
 2.to count the the number of fruits in the vineyard run the below code in another terminal 
 
 
-           rosrun uol_cmp9767m_tutorial grape_detection.py
+    rosrun uol_cmp9767m_tutorial grape_detection.py
 
       
 
