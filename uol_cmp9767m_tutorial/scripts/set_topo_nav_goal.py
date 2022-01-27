@@ -24,7 +24,7 @@ if __name__ == '__main__':
     result = client.get_result()
     rospy.loginfo("status is %s", status)
     rospy.loginfo("result is %s", result)
-    sleep(5)
+    sleep(10)
     # send second goal
     goal.target = "WayPoint1"
     # Fill in the goal here
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     result = client.get_result()
     rospy.loginfo("status is %s", status)
     rospy.loginfo("result is %s", result)
-    sleep(5)
+    sleep(10)
     goal.target = "WayPoint2"
     # Fill in the goal here
     client.send_goal(goal)
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     result = client.get_result()
     rospy.loginfo("status is %s", status)
     rospy.loginfo("result is %s", result)
-    sleep(5)
+    sleep(10)
     goal.target = "WayPoint3"
     # Fill in the goal here
     client.send_goal(goal)
@@ -49,6 +49,43 @@ if __name__ == '__main__':
     result = client.get_result()
     rospy.loginfo("status is %s", status)
     rospy.loginfo("result is %s", result)
-  
+    goal = GotoNodeGoal()
+    sleep(10)
+    goal.target = "WayPoint4"
+    client.send_goal(goal)
+    status = client.wait_for_result() # wait until the action is complete
+    result = client.get_result()
+    rospy.loginfo("status is %s", status)
+    rospy.loginfo("result is %s", result)
+    sleep(10)
+    # send second goal
+    goal.target = "WayPoint5"
+    # Fill in the goal here
+    client.send_goal(goal)
+    status = client.wait_for_result() # wait until the action is complete
+    result = client.get_result()
+    rospy.loginfo("status is %s", status)
+    rospy.loginfo("result is %s", result)
+    sleep(10)
+     # send second goal
+    goal.target = "WayPoint6"
+    # Fill in the goal here
+    client.send_goal(goal)
+    status = client.wait_for_result() # wait until the action is complete
+    result = client.get_result()
+    rospy.loginfo("status is %s", status)
+    rospy.loginfo("result is %s", result)
+    sleep(10)
+     # send second goal
+    goal.target = "WayPoint7"
+    # Fill in the goal here
+    client.send_goal(goal)
+    status = client.wait_for_result() # wait until the action is complete
+    result = client.get_result()
+    rospy.loginfo("status is %s", status)
+    rospy.loginfo("result is %s", result)
+    sleep(10)
+   
+   
    
 
