@@ -3,7 +3,7 @@
 # Python libs
 import sys, time
 
-# OpenCV
+# OpenCV and dbscan function taken from https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html website
 import cv2
 from sklearn.cluster import DBSCAN
 
